@@ -1,38 +1,112 @@
-.App {
+body{
+  /* background-image: url('./asset/ian-schneider-dqMxDqdhg_4-unsplash.jpg'); */
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  /* background-image: linear-gradient(to bottom , rgba(0,0,0,0.1),rgba(0,0,0,0.5)); */
+}
+.App{
+    /* background-color: skyblue; */
+  margin: auto;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  /* background-image: linear-gradient(to bottom , rgba(0,0,0,0.5),rgba(0,0,0,0.5)); */
+    /* background: linear-gradient(to right, #3494e6, #ec6ead);    */
+}
+
+.Header{
+    text-align: center;
+    height: 200px;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 24px;
+}
+.Form{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+}
+.CurrDate{
+    font-size: 22px;
+    color:black;
+    font-weight: 500;
+    margin: 10px;
+    text-shadow: 2px 2px rgba(195, 195, 241, 0.2);
+    font-style: italic;
+}
+#search-cities{
+    width: 500px;
+    /* border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px; */
+    /* background: linear-gradient(to right, #ef32d9, #89fffd);  */
+}
+
+.Descibe{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.general{
+  
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.name-city{
+  font-size: 32px;
+  font-weight: 500;
+  text-shadow: 2px 2px rgba(123, 123, 153, 0.2);
+}
+.temp{
+  position: relative;
+  display: inline-block;
+  margin: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+  /* color: white; */
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 2px 2px rgba(123, 123, 153, 0.5);
+  box-shadow: 3px 5px rgba(0, 0, 0, 0.2);
+}
+.status{
+  font-size: 32px;
+  font-weight: 500;
+  text-shadow: 2px 2px rgba(123, 123, 153, 0.2);
+}
+.detail{
+    text-align: center  ;
+}
+.description{
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 2px 2px rgba(123, 123, 153, 0.2);
+}
+.humidity{
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 2px 2px rgba(123, 123, 153, 0.2);
+}
+#btn-search{
+    outline: none;
+    border-radius: 3px;
+    border: none;
+    margin-left: 5px;
+    color: white;
+    background-color: #6667AB;
+}
+#btn-search:hover{
+  cursor: pointer;
+  opacity: 0.8;
+  transition: linear 0.2s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

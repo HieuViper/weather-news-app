@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+.input-name,.input-email,.input-subject,.input-message{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+.btn-send{
+    background-color: #6667AB;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    float: right;
+    right: 0;
+}
+.btn-send:hover{
+    background-color: #4d4e83;
+}
