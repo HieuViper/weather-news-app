@@ -18,7 +18,7 @@ function News() {
     const getData = (topic) => {
         axios({
             method: "GET",
-            url: `https://newsapi.org/v2/everything?q=${topic}&from=2021-11-12&sortBy=publishedAt&apiKey=c05a6d6beee44b3c89278b81838fcf09`,
+            url: `https://newsapi.org/v2/everything?q=${topic}&apiKey=c05a6d6beee44b3c89278b81838fcf09`,
         })
             .then((response) => {
                 console.log(response);
