@@ -3,7 +3,8 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import NewsItem from "./NewsItem";
 import './NewsItem.css'
-//API key is: c05a6d6beee44b3c89278b81838fcf09
+// News API key : c05a6d6beee44b3c89278b81838fcf09
+// GNews API key : beb82cf1492a7a0eaa42f094650eeb56
 function News() {
     const [articles, setArticles] = useState([])
     const [topic, setTopic] = useState("")
@@ -18,7 +19,7 @@ function News() {
     const getData = (topic) => {
         axios({
             method: "GET",
-            url: `https://newsapi.org/v2/everything?q=${topic}&apiKey=c05a6d6beee44b3c89278b81838fcf09`,
+            url: `https://gnews.io/api/v4/search?q=${topic}&token=beb82cf1492a7a0eaa42f094650eeb56`,
         })
             .then((response) => {
                 console.log(response);
@@ -53,7 +54,7 @@ function News() {
                         title={article.title}
                         description={article.description}
                         url={article.url}
-                        urlToImage={article.urlToImage}
+                        image={article.image}
                     />
                 )
             })}
